@@ -97,12 +97,13 @@ Créer un ACL, et ajouter un ACE
     namespace Acme\DemoBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
     use Symfony\Component\Security\Core\Exception\AccessDeniedException;
     use Symfony\Component\Security\Acl\Domain\ObjectIdentity;
     use Symfony\Component\Security\Acl\Domain\UserSecurityIdentity;
     use Symfony\Component\Security\Acl\Permission\MaskBuilder;
 
-    class BlogController
+    class BlogController extends Controller
     {
         // ...
 
